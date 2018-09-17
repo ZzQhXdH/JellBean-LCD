@@ -1,0 +1,10 @@
+.\objects\uipolygon.o: ..\User\GUI\UiPolygon.cpp
+.\objects\uipolygon.o: ..\User\GUI/UiPolygon.h
+.\objects\uipolygon.o: ..\STemWin\inc\GUI.h
+.\objects\uipolygon.o: ..\STemWin\inc\GUI_ConfDefaults.h
+.\objects\uipolygon.o: ..\STemWin\Config\GUIConf.h
+.\objects\uipolygon.o: ..\STemWin\inc\GUI_Type.h
+.\objects\uipolygon.o: ..\STemWin\inc\LCD.h
+.\objects\uipolygon.o: ..\STemWin\inc\Global.h
+.\objects\uipolygon.o: ..\STemWin\inc\GUI_Version.h
+.\objects\uipolygon.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h

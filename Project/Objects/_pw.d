@@ -1,0 +1,9 @@
+.\objects\_pw.o: ..\User\_pw.c
+.\objects\_pw.o: D:\keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\_pw.o: ..\STemWin\inc\GUI.h
+.\objects\_pw.o: ..\STemWin\inc\GUI_ConfDefaults.h
+.\objects\_pw.o: ..\STemWin\Config\GUIConf.h
+.\objects\_pw.o: ..\STemWin\inc\GUI_Type.h
+.\objects\_pw.o: ..\STemWin\inc\LCD.h
+.\objects\_pw.o: ..\STemWin\inc\Global.h
+.\objects\_pw.o: ..\STemWin\inc\GUI_Version.h
