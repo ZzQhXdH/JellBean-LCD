@@ -2,7 +2,7 @@
 .\objects\lcdconf.o: ..\User\Driver/Lcd.h
 .\objects\lcdconf.o: ..\CMSIS\stm32f4xx.h
 .\objects\lcdconf.o: ..\CMSIS\core_cm4.h
-.\objects\lcdconf.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lcdconf.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\lcdconf.o: ..\CMSIS\core_cmInstr.h
 .\objects\lcdconf.o: ..\CMSIS\core_cmFunc.h
 .\objects\lcdconf.o: ..\CMSIS\core_cmSimd.h
@@ -17,6 +17,6 @@
 .\objects\lcdconf.o: ..\STemWin\inc\GUI_Private.h
 .\objects\lcdconf.o: ..\STemWin\inc\LCD_Protected.h
 .\objects\lcdconf.o: ..\STemWin\inc\GUI_Debug.h
-.\objects\lcdconf.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\lcdconf.o: C:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\lcdconf.o: ..\STemWin\inc\WM_GUI.h
 .\objects\lcdconf.o: ..\STemWin\inc\GUIDRV_Lin.h

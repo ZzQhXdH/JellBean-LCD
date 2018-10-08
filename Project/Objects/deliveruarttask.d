@@ -1,10 +1,10 @@
 .\objects\deliveruarttask.o: ..\User\Task\DeliverUartTask.cpp
 .\objects\deliveruarttask.o: ..\User\Task/DeliverUartTask.h
 .\objects\deliveruarttask.o: ..\User\Task/Task.h
-.\objects\deliveruarttask.o: D:\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS2\RTX\Include\rtx_os.h
-.\objects\deliveruarttask.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\deliveruarttask.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\deliveruarttask.o: D:\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS2\Include\cmsis_os2.h
+.\objects\deliveruarttask.o: C:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS2\RTX\Include\rtx_os.h
+.\objects\deliveruarttask.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\deliveruarttask.o: C:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\deliveruarttask.o: C:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS2\Include\cmsis_os2.h
 .\objects\deliveruarttask.o: ..\User\Event/DeliverEvent.h
 .\objects\deliveruarttask.o: ..\User\Event/Event.h
 .\objects\deliveruarttask.o: ..\User\Driver/DeliverUart.h

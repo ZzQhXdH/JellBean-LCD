@@ -2,6 +2,22 @@
 
 static const char *pDefaultPassword = "187258369";
 
+void WaresManager::setSelectNumber(const uint16_t *numbers)
+{
+	for (uint32_t i = 0; i < 5; i ++)
+	{
+		mInfoArray[i].SelectNumber = numbers[i];
+	}
+}
+
+void WaresManager::onDeliverSuccess(void)
+{
+	for (uint32_t i = 0; i < 5; i ++)
+	{
+		mInfoArray[i].SalesVolume += mInfoArray[i].SelectNumber;
+	}
+	save();
+}
 
 void WaresManager::setPassword(const char *password)
 {

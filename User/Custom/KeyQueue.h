@@ -3,12 +3,6 @@
 
 #include <stdint.h>
 
-class KeyListener
-{
-	public:
-		virtual void onDisplayPasswordWindow(void) {}
-};
-
 class KeyQueue
 {
 	public:
@@ -20,14 +14,13 @@ class KeyQueue
 		
 		void push(uint16_t key);
 		
-		inline void setListener(KeyListener *listener) { pListener = listener; }
-	
+		bool pushAndCheck(uint16_t key);
+		
 	private:
 		KeyQueue(void);
 		bool isChecked(void);
 	
 	private:
-		KeyListener *pListener;
 		uint16_t mKeyArray[6];
 };
 

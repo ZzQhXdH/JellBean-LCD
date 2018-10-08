@@ -27,6 +27,8 @@ class KeyEvent
 	
 		KeyEvent(KeyValue v);
 		
+		void exec(void);
+	
 		inline void setValue(KeyValue v) {
 			mValue = v;
 		}
@@ -34,11 +36,7 @@ class KeyEvent
 		inline KeyValue value(void) {
 			return mValue;
 		}
-		
-		uint16_t valueInteger(void);
-		
-		bool isInteger(void);
-	
+
 	private:
 		KeyValue mValue;
 };

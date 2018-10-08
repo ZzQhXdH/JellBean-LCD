@@ -22,34 +22,31 @@ class MDBManager
 			return INSTANCE;
 		}
 		
-		void payStart(uint32_t money); // 开始支付
+		void onPayStart(uint32_t money); // 开始支付
 		
-		void payStop(void); // 停止支付
+		void onPayStop(void); // 停止支付
 		
-		void error(void); // 退款
+		void onError(void); // 出货失败 
 		
-		void success(void); // 成功
+		void onSuccess(void); // 出货成功 
 		
-		void disableCoin(void);
+		void onVposChecked(void); // 收到VPOS请求
 		
-		void enableCoin(void);
+		void onCashChecked(uint32_t money); // 收到现金支付请求
 		
-		void disablePaper(void);
+		inline uint32_t getAlreadyMoney(void) { return MoneyAlready; }
 		
-		void enablePaper(void);
+		inline bool isPaySuccessing() { return isPaySuccess; }
 		
-		void enableVpos(void);
+		inline void giveChange(uint32_t number) // 退钱 1分钱的个数
+		{
+			LogUart::instance()
+				.setAction(0x07)
+				.append1(number / 50)
+				.buildAndWrite();
+		}
 		
-		void disableVpos(void);
-
-		void giveChange(uint32_t number5); // 找钱
-		
-		void gatherPaper(void); // 接收纸币
-		
-		void returnPaper(void); // 退还纸币
-		
-		void setPos(void); 
-		
+	private:
 		bool isPaySuccess;
 		bool isVposPay;
 		bool isCashPay;

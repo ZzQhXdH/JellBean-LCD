@@ -5,7 +5,11 @@
 
 class DeliverEvent : public Event
 {
+	public:
+		void exec(void);
 	
+	private:
+		
 };
 
 

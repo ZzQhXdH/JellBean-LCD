@@ -16,6 +16,10 @@ class WaresManager
 			return man;
 		}
 		
+		void setSelectNumber(const uint16_t *numbers);
+		
+		void onDeliverSuccess(void);
+		
 		inline uint32_t getPrice(uint32_t id) { return mInfoArray[id - 1].Price; }
 		
 		inline uint32_t getInventory(uint32_t id) { return mInfoArray[id - 1].Inventory; }
@@ -23,6 +27,8 @@ class WaresManager
 		inline void DeduInventory(uint32_t id, uint32_t number) { mInfoArray[id - 1].Inventory -= number; }
 		
 		inline void setPrice(uint32_t id, uint32_t price) { mInfoArray[id - 1].Price = price; save(); }
+		
+		inline uint32_t getSalesVolume(uint32_t id) { return mInfoArray[id - 1].SalesVolume; }
 		
 		inline char *getPassword(void) { return mPassword; }
 		
@@ -40,6 +46,12 @@ class WaresManager
 		inline void load(void)
 		{
 			FlashMemory::instance().read(WARES_FALSH_DATA_ADDRESS, (uint8_t *) this, sizeof (WaresManager));
+			for (uint32_t i = 0; i < 5; i ++)
+			{
+				if (mInfoArray[i].SalesVolume == 0xFFFFFFFF) {
+					mInfoArray[i].SalesVolume = 0;
+				}
+			}
 		}
 		
 	private:

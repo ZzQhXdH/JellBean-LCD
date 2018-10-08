@@ -1,8 +1,8 @@
 .\objects\gui_x_os.o: ..\STemWin\OS\GUI_X_OS.c
-.\objects\gui_x_os.o: D:\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS2\RTX\Include\rtx_os.h
-.\objects\gui_x_os.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\gui_x_os.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\gui_x_os.o: D:\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS2\Include\cmsis_os2.h
+.\objects\gui_x_os.o: C:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS2\RTX\Include\rtx_os.h
+.\objects\gui_x_os.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gui_x_os.o: C:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\gui_x_os.o: C:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS2\Include\cmsis_os2.h
 .\objects\gui_x_os.o: ..\STemWin\inc\GUI_Private.H
 .\objects\gui_x_os.o: ..\STemWin\inc\GUI.h
 .\objects\gui_x_os.o: ..\STemWin\inc\GUI_ConfDefaults.h

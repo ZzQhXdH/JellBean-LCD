@@ -1,9 +1,9 @@
 .\objects\guidrv_template.o: ..\STemWin\Config\GUIDRV_Template.c
-.\objects\guidrv_template.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\guidrv_template.o: C:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\guidrv_template.o: ..\User\Driver/Lcd.h
 .\objects\guidrv_template.o: ..\CMSIS\stm32f4xx.h
 .\objects\guidrv_template.o: ..\CMSIS\core_cm4.h
-.\objects\guidrv_template.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\guidrv_template.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\guidrv_template.o: ..\CMSIS\core_cmInstr.h
 .\objects\guidrv_template.o: ..\CMSIS\core_cmFunc.h
 .\objects\guidrv_template.o: ..\CMSIS\core_cmSimd.h

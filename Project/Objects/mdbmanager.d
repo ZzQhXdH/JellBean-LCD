@@ -3,7 +3,7 @@
 .\objects\mdbmanager.o: ..\User\Driver/LogUart.h
 .\objects\mdbmanager.o: ..\CMSIS\stm32f4xx.h
 .\objects\mdbmanager.o: ..\CMSIS\core_cm4.h
-.\objects\mdbmanager.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\mdbmanager.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\mdbmanager.o: ..\CMSIS\core_cmInstr.h
 .\objects\mdbmanager.o: ..\CMSIS\core_cmFunc.h
 .\objects\mdbmanager.o: ..\CMSIS\core_cmSimd.h
@@ -11,9 +11,9 @@
 .\objects\mdbmanager.o: ..\User\Event/Sender.h
 .\objects\mdbmanager.o: ..\User\Event/Event.h
 .\objects\mdbmanager.o: ..\User\Task/Task.h
-.\objects\mdbmanager.o: D:\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS2\RTX\Include\rtx_os.h
-.\objects\mdbmanager.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\mdbmanager.o: D:\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS2\Include\cmsis_os2.h
+.\objects\mdbmanager.o: C:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS2\RTX\Include\rtx_os.h
+.\objects\mdbmanager.o: C:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\mdbmanager.o: C:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS2\Include\cmsis_os2.h
 .\objects\mdbmanager.o: ..\User\Event/Receiver.h
 .\objects\mdbmanager.o: ..\User\Event/LogEvent.h
 .\objects\mdbmanager.o: ..\User\Custom/BaseOutput.h

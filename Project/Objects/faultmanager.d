@@ -1,0 +1,10 @@
+.\objects\faultmanager.o: ..\User\Custom\FaultManager.cpp
+.\objects\faultmanager.o: ..\User\Custom/FaultManager.h
+.\objects\faultmanager.o: ..\CMSIS\stm32f4xx.h
+.\objects\faultmanager.o: ..\CMSIS\core_cm4.h
+.\objects\faultmanager.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\faultmanager.o: ..\CMSIS\core_cmInstr.h
+.\objects\faultmanager.o: ..\CMSIS\core_cmFunc.h
+.\objects\faultmanager.o: ..\CMSIS\core_cmSimd.h
+.\objects\faultmanager.o: ..\CMSIS\system_stm32f4xx.h
+.\objects\faultmanager.o: ..\User\Custom/DEXFile.h

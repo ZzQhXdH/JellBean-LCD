@@ -11,11 +11,11 @@ class WaresInfo
 	public:
 		uint32_t Inventory; // 库存
 		uint32_t Price; // 价格
+		
+		uint32_t SelectNumber; // 选择的数量
+
+		uint32_t SalesVolume; // 销量
 };
-
-
-
-
 
 
 

@@ -2,7 +2,7 @@
 .\objects\keyuart.o: ..\User\Driver/KeyUart.h
 .\objects\keyuart.o: ..\CMSIS\stm32f4xx.h
 .\objects\keyuart.o: ..\CMSIS\core_cm4.h
-.\objects\keyuart.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\keyuart.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\keyuart.o: ..\CMSIS\core_cmInstr.h
 .\objects\keyuart.o: ..\CMSIS\core_cmFunc.h
 .\objects\keyuart.o: ..\CMSIS\core_cmSimd.h
@@ -10,7 +10,7 @@
 .\objects\keyuart.o: ..\User\Event/Receiver.h
 .\objects\keyuart.o: ..\User\Event/Event.h
 .\objects\keyuart.o: ..\User\Task/Task.h
-.\objects\keyuart.o: D:\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS2\RTX\Include\rtx_os.h
-.\objects\keyuart.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\keyuart.o: D:\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS2\Include\cmsis_os2.h
+.\objects\keyuart.o: C:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS2\RTX\Include\rtx_os.h
+.\objects\keyuart.o: C:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\keyuart.o: C:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS2\Include\cmsis_os2.h
 .\objects\keyuart.o: ..\User\Event/KeyEvent.h

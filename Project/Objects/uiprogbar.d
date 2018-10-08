@@ -1,6 +1,6 @@
-.\objects\uiprogbar.o: ..\User\GUI\UiProgBar.cpp
-.\objects\uiprogbar.o: ..\User\GUI/UiProgBar.h
-.\objects\uiprogbar.o: ..\User\GUI/BaseWindow.h
+.\objects\uiprogbar.o: ..\User\Widget\UiProgBar.cpp
+.\objects\uiprogbar.o: ..\User\Widget/UiProgBar.h
+.\objects\uiprogbar.o: ..\User\Window/BaseWindow.h
 .\objects\uiprogbar.o: ..\STemWin\inc\GUI.h
 .\objects\uiprogbar.o: ..\STemWin\inc\GUI_ConfDefaults.h
 .\objects\uiprogbar.o: ..\STemWin\Config\GUIConf.h
@@ -18,7 +18,7 @@
 .\objects\uiprogbar.o: ..\STemWin\inc\GUI_Private.h
 .\objects\uiprogbar.o: ..\STemWin\inc\LCD_Protected.h
 .\objects\uiprogbar.o: ..\STemWin\inc\GUI_Debug.h
-.\objects\uiprogbar.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\uiprogbar.o: C:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\uiprogbar.o: ..\STemWin\inc\SCROLLBAR.h
 .\objects\uiprogbar.o: ..\STemWin\inc\WIDGET.h
 .\objects\uiprogbar.o: ..\STemWin\inc\CALENDAR.h
@@ -47,8 +47,8 @@
 .\objects\uiprogbar.o: ..\STemWin\inc\TEXT.h
 .\objects\uiprogbar.o: ..\STemWin\inc\TREEVIEW.h
 .\objects\uiprogbar.o: ..\STemWin\inc\KNOB.h
-.\objects\uiprogbar.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\uiprogbar.o: ..\User\GUI/UiStatus.h
+.\objects\uiprogbar.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uiprogbar.o: ..\User\Widget/UiStatus.h
 .\objects\uiprogbar.o: ..\User\Resource/StringResources.h
 .\objects\uiprogbar.o: ..\User\Driver/LogUart.h
 .\objects\uiprogbar.o: ..\CMSIS\stm32f4xx.h
@@ -60,14 +60,14 @@
 .\objects\uiprogbar.o: ..\User\Event/Sender.h
 .\objects\uiprogbar.o: ..\User\Event/Event.h
 .\objects\uiprogbar.o: ..\User\Task/Task.h
-.\objects\uiprogbar.o: D:\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS2\RTX\Include\rtx_os.h
-.\objects\uiprogbar.o: D:\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS2\Include\cmsis_os2.h
+.\objects\uiprogbar.o: C:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS2\RTX\Include\rtx_os.h
+.\objects\uiprogbar.o: C:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS2\Include\cmsis_os2.h
 .\objects\uiprogbar.o: ..\User\Event/Receiver.h
 .\objects\uiprogbar.o: ..\User\Event/LogEvent.h
 .\objects\uiprogbar.o: ..\User\Custom/BaseOutput.h
 .\objects\uiprogbar.o: ..\User\Custom/WaresManager.h
 .\objects\uiprogbar.o: ..\User\Custom/WaresInfo.h
-.\objects\uiprogbar.o: D:\keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\uiprogbar.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\uiprogbar.o: ..\User\Driver/DeliverUart.h
 .\objects\uiprogbar.o: ..\User\Event/DeliverEvent.h
 .\objects\uiprogbar.o: ..\User\Driver/FlashMemory.h
@@ -75,5 +75,5 @@
 .\objects\uiprogbar.o: ..\User\Custom/MDBManager.h
 .\objects\uiprogbar.o: ..\CMSIS\arm_math.h
 .\objects\uiprogbar.o: ..\CMSIS\core_cm4.h
-.\objects\uiprogbar.o: D:\keil\ARM\ARMCC\Bin\..\include\string.h
-.\objects\uiprogbar.o: D:\keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\uiprogbar.o: C:\Keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\uiprogbar.o: C:\Keil\ARM\ARMCC\Bin\..\include\math.h

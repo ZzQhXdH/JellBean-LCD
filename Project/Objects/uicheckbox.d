@@ -1,5 +1,5 @@
-.\objects\uicheckbox.o: ..\User\GUI\UiCheckBox.cpp
-.\objects\uicheckbox.o: ..\User\GUI/UiCheckBox.h
+.\objects\uicheckbox.o: ..\User\Widget\UiCheckBox.cpp
+.\objects\uicheckbox.o: ..\User\Widget/UiCheckBox.h
 .\objects\uicheckbox.o: ..\STemWin\inc\GUI.h
 .\objects\uicheckbox.o: ..\STemWin\inc\GUI_ConfDefaults.h
 .\objects\uicheckbox.o: ..\STemWin\Config\GUIConf.h
@@ -17,7 +17,7 @@
 .\objects\uicheckbox.o: ..\STemWin\inc\GUI_Private.h
 .\objects\uicheckbox.o: ..\STemWin\inc\LCD_Protected.h
 .\objects\uicheckbox.o: ..\STemWin\inc\GUI_Debug.h
-.\objects\uicheckbox.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\uicheckbox.o: C:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\uicheckbox.o: ..\STemWin\inc\SCROLLBAR.h
 .\objects\uicheckbox.o: ..\STemWin\inc\WIDGET.h
 .\objects\uicheckbox.o: ..\STemWin\inc\CALENDAR.h
@@ -46,4 +46,4 @@
 .\objects\uicheckbox.o: ..\STemWin\inc\TEXT.h
 .\objects\uicheckbox.o: ..\STemWin\inc\TREEVIEW.h
 .\objects\uicheckbox.o: ..\STemWin\inc\KNOB.h
-.\objects\uicheckbox.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uicheckbox.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h

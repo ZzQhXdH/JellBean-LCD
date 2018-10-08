@@ -1,6 +1,6 @@
 .\objects\keyqueue.o: ..\User\Custom\KeyQueue.cpp
 .\objects\keyqueue.o: ..\User\Custom/KeyQueue.h
-.\objects\keyqueue.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\keyqueue.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\keyqueue.o: ..\User\Driver/LogUart.h
 .\objects\keyqueue.o: ..\CMSIS\stm32f4xx.h
 .\objects\keyqueue.o: ..\CMSIS\core_cm4.h
@@ -11,9 +11,9 @@
 .\objects\keyqueue.o: ..\User\Event/Sender.h
 .\objects\keyqueue.o: ..\User\Event/Event.h
 .\objects\keyqueue.o: ..\User\Task/Task.h
-.\objects\keyqueue.o: D:\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS2\RTX\Include\rtx_os.h
-.\objects\keyqueue.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\keyqueue.o: D:\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS2\Include\cmsis_os2.h
+.\objects\keyqueue.o: C:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS2\RTX\Include\rtx_os.h
+.\objects\keyqueue.o: C:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\keyqueue.o: C:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS2\Include\cmsis_os2.h
 .\objects\keyqueue.o: ..\User\Event/Receiver.h
 .\objects\keyqueue.o: ..\User\Event/LogEvent.h
 .\objects\keyqueue.o: ..\User\Custom/BaseOutput.h

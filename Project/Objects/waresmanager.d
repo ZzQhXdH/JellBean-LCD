@@ -1,8 +1,8 @@
 .\objects\waresmanager.o: ..\User\Custom\WaresManager.cpp
 .\objects\waresmanager.o: ..\User\Custom/WaresManager.h
 .\objects\waresmanager.o: ..\User\Custom/WaresInfo.h
-.\objects\waresmanager.o: D:\keil\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\waresmanager.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\waresmanager.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\waresmanager.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\waresmanager.o: ..\STemWin\inc\GUI.h
 .\objects\waresmanager.o: ..\STemWin\inc\GUI_ConfDefaults.h
 .\objects\waresmanager.o: ..\STemWin\Config\GUIConf.h
@@ -20,9 +20,9 @@
 .\objects\waresmanager.o: ..\User\Event/Sender.h
 .\objects\waresmanager.o: ..\User\Event/Event.h
 .\objects\waresmanager.o: ..\User\Task/Task.h
-.\objects\waresmanager.o: D:\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS2\RTX\Include\rtx_os.h
-.\objects\waresmanager.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
-.\objects\waresmanager.o: D:\keil\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\RTOS2\Include\cmsis_os2.h
+.\objects\waresmanager.o: C:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS2\RTX\Include\rtx_os.h
+.\objects\waresmanager.o: C:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\waresmanager.o: C:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\RTOS2\Include\cmsis_os2.h
 .\objects\waresmanager.o: ..\User\Event/Receiver.h
 .\objects\waresmanager.o: ..\User\Event/DeliverEvent.h
 .\objects\waresmanager.o: ..\User\Custom/BaseOutput.h

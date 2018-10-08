@@ -23,7 +23,7 @@ class BaseOutput
 		
 		inline BaseOutput &append1(uint8_t arg)
 		{
-			pByteArrayBuffer[nIndex] = arg & 0x7F;
+			pByteArrayBuffer[nIndex] = arg;
 			nIndex ++;
 			return *this;
 		}

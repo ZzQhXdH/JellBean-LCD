@@ -15,7 +15,7 @@
         <TargetCommonOption>
           <Device>STM32F407VETx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F4xx_DFP.2.13.0</PackID>
+          <PackID>Keil.STM32F4xx_DFP.2.7.0</PackID>
           <PackURL>http://www.keil.com/pack</PackURL>
           <Cpu>IRAM(0x20000000,0x00020000) IRAM2(0x10000000,0x00010000) IROM(0x08000000,0x00080000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -324,15 +324,15 @@
             <uSurpInc>0</uSurpInc>
             <uC99>0</uC99>
             <useXO>0</useXO>
-            <v6Lang>1</v6Lang>
-            <v6LangP>1</v6LangP>
+            <v6Lang>3</v6Lang>
+            <v6LangP>3</v6LangP>
             <vShortEn>1</vShortEn>
             <vShortWch>1</vShortWch>
             <v6Lto>0</v6Lto>
             <v6WtE>0</v6WtE>
             <v6Rtti>0</v6Rtti>
             <VariousControls>
-              <MiscControls></MiscControls>
+              <MiscControls>--cpp11</MiscControls>
               <Define>STM32F40_41xxx, __TARGET_FPU_VFP,ARM_MATH_CM4,__FPU_PRESENT=1</Define>
               <Undefine></Undefine>
               <IncludePath>..\CMSIS;..\User;..\STemWin\OS;..\STemWin\Config;..\STemWin\inc</IncludePath>
@@ -415,9 +415,14 @@
               <FilePath>..\User\Task\GUITask.cpp</FilePath>
             </File>
             <File>
-              <FileName>DeliverUartTask.cpp</FileName>
+              <FileName>BootMainTask.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\User\Task\DeliverUartTask.cpp</FilePath>
+              <FilePath>..\User\Task\BootMainTask.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>DexTask.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Task\DexTask.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -448,6 +453,11 @@
               <FileName>FlashMemory.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>..\User\Driver\FlashMemory.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>DexUart.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Driver\DexUart.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -489,6 +499,151 @@
               <FileType>8</FileType>
               <FilePath>..\User\Event\Timer.cpp</FilePath>
             </File>
+            <File>
+              <FileName>DexEvent.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Event\DexEvent.cpp</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>User/Window</GroupName>
+          <Files>
+            <File>
+              <FileName>BaseWindow.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Window\BaseWindow.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>PriceWindow.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Window\PriceWindow.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>PayWindow.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Window\PayWindow.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>BackgroundWindow.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Window\BackgroundWindow.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>ChangePINWindow.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Window\ChangePINWindow.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>PasswordWindow.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Window\PasswordWindow.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>SettingPriceWindow.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Window\SettingPriceWindow.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>StatusWindow.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Window\StatusWindow.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>SystemConfigWindow.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Window\SystemConfigWindow.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>DeliverWindow.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Window\DeliverWindow.cpp</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>User/Widget</GroupName>
+          <Files>
+            <File>
+              <FileName>UiCheckBox.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Widget\UiCheckBox.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>UiPolygon.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Widget\UiPolygon.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>UiStatus.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Widget\UiStatus.cpp</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>User/Custom</GroupName>
+          <Files>
+            <File>
+              <FileName>WaresInfo.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Custom\WaresInfo.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>WaresManager.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Custom\WaresManager.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>BaseOutput.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Custom\BaseOutput.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>KeyQueue.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Custom\KeyQueue.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>BaseBuffer.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Custom\BaseBuffer.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>MDBManager.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Custom\MDBManager.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>FaultManager.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Custom\FaultManager.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>WindowManager.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Custom\WindowManager.cpp</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>User/Dex</GroupName>
+          <Files>
+            <File>
+              <FileName>Dex.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Dex\Dex.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>DexOutput.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Dex\DexOutput.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>DexFileBuilder.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\User\Dex\DexFileBuilder.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -522,112 +677,12 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>GUI</GroupName>
-          <Files>
-            <File>
-              <FileName>UiPolygon.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\GUI\UiPolygon.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>BackgroundWindow.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\GUI\BackgroundWindow.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>PasswordWindow.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\GUI\PasswordWindow.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>SystemConfigWindow.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\GUI\SystemConfigWindow.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>ChangePINWindow.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\GUI\ChangePINWindow.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>BaseWindow.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\GUI\BaseWindow.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>UiProgBar.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\GUI\UiProgBar.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>PriceWindow.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\GUI\PriceWindow.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>SettingPriceWindow.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\GUI\SettingPriceWindow.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>UiStatus.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\GUI\UiStatus.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>PayWindow.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\GUI\PayWindow.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>StatusWindow.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\GUI\StatusWindow.cpp</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>Resource</GroupName>
           <Files>
             <File>
               <FileName>StringResources.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>..\User\Resource\StringResources.cpp</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Custom</GroupName>
-          <Files>
-            <File>
-              <FileName>WaresInfo.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\Custom\WaresInfo.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>WaresManager.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\Custom\WaresManager.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>BaseOutput.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\Custom\BaseOutput.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>KeyQueue.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\Custom\KeyQueue.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>BaseBuffer.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\Custom\BaseBuffer.cpp</FilePath>
-            </File>
-            <File>
-              <FileName>MDBManager.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\User\Custom\MDBManager.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -648,20 +703,20 @@
       </api>
     </apis>
     <components>
-      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.1.1" condition="ARMv6_7_8-M Device">
-        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.3.0"/>
+      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.0.1" condition="ARMv6_7_8-M Device">
+        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.0.1"/>
         <targetInfos>
           <targetInfo name="JellyBean"/>
         </targetInfos>
       </component>
-      <component Cclass="CMSIS" Cgroup="DSP" Cvendor="ARM" Cversion="1.5.2" condition="CMSIS DSP">
-        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.3.0"/>
+      <component Cclass="CMSIS" Cgroup="DSP" Cvendor="ARM" Cversion="1.5.1" condition="CMSIS DSP">
+        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.0.1"/>
         <targetInfos>
           <targetInfo name="JellyBean"/>
         </targetInfos>
       </component>
-      <component Capiversion="2.1.2" Cclass="CMSIS" Cgroup="RTOS2" Csub="Keil RTX5" Cvariant="Library" Cvendor="ARM" Cversion="5.3.0" condition="RTOS2 RTX5 Lib">
-        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.3.0"/>
+      <component Capiversion="2.1.0" Cclass="CMSIS" Cgroup="RTOS2" Csub="Keil RTX5" Cvariant="Library" Cvendor="ARM" Cversion="5.1.0" condition="RTOS2 RTX5">
+        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.0.1"/>
         <targetInfos>
           <targetInfo name="JellyBean"/>
         </targetInfos>
@@ -670,19 +725,31 @@
     <files>
       <file attr="config" category="source" name="CMSIS\RTOS2\RTX\Config\RTX_Config.c" version="5.1.0">
         <instance index="0">RTE\CMSIS\RTX_Config.c</instance>
-        <component Capiversion="2.1.2" Cclass="CMSIS" Cgroup="RTOS2" Csub="Keil RTX5" Cvariant="Library" Cvendor="ARM" Cversion="5.3.0" condition="RTOS2 RTX5 Lib"/>
-        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.3.0"/>
+        <component Capiversion="2.1.0" Cclass="CMSIS" Cgroup="RTOS2" Csub="Keil RTX5" Cvariant="Library" Cvendor="ARM" Cversion="5.1.0" condition="RTOS2 RTX5"/>
+        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.0.1"/>
         <targetInfos>
           <targetInfo name="JellyBean"/>
         </targetInfos>
       </file>
       <file attr="config" category="header" name="CMSIS\RTOS2\RTX\Config\RTX_Config.h" version="5.3.0">
         <instance index="0">RTE\CMSIS\RTX_Config.h</instance>
-        <component Capiversion="2.1.2" Cclass="CMSIS" Cgroup="RTOS2" Csub="Keil RTX5" Cvariant="Library" Cvendor="ARM" Cversion="5.3.0" condition="RTOS2 RTX5 Lib"/>
-        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.3.0"/>
+        <component Capiversion="2.1.0" Cclass="CMSIS" Cgroup="RTOS2" Csub="Keil RTX5" Cvariant="Library" Cvendor="ARM" Cversion="5.1.0" condition="RTOS2 RTX5"/>
+        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.0.1"/>
         <targetInfos>
           <targetInfo name="JellyBean"/>
         </targetInfos>
+      </file>
+      <file attr="config" category="source" condition="STM32F407xx_ARMCC" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s" version="2.4.2">
+        <instance index="0" removed="1">RTE\Device\STM32F407VETx\startup_stm32f407xx.s</instance>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.4.2" condition="STM32F4 CMSIS"/>
+        <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.7.0"/>
+        <targetInfos/>
+      </file>
+      <file attr="config" category="source" name="Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c" version="2.4.2">
+        <instance index="0" removed="1">RTE\Device\STM32F407VETx\system_stm32f4xx.c</instance>
+        <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.4.2" condition="STM32F4 CMSIS"/>
+        <package name="STM32F4xx_DFP" schemaVersion="1.3" url="http://www.keil.com/pack" vendor="Keil" version="2.7.0"/>
+        <targetInfos/>
       </file>
     </files>
   </RTE>

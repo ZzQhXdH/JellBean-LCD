@@ -1,5 +1,5 @@
-.\objects\uistatus.o: ..\User\GUI\UiStatus.cpp
-.\objects\uistatus.o: ..\User\GUI/UiStatus.h
+.\objects\uistatus.o: ..\User\Widget\UiStatus.cpp
+.\objects\uistatus.o: ..\User\Widget/UiStatus.h
 .\objects\uistatus.o: ..\STemWin\inc\GUI.h
 .\objects\uistatus.o: ..\STemWin\inc\GUI_ConfDefaults.h
 .\objects\uistatus.o: ..\STemWin\Config\GUIConf.h
@@ -17,7 +17,7 @@
 .\objects\uistatus.o: ..\STemWin\inc\GUI_Private.h
 .\objects\uistatus.o: ..\STemWin\inc\LCD_Protected.h
 .\objects\uistatus.o: ..\STemWin\inc\GUI_Debug.h
-.\objects\uistatus.o: D:\keil\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\uistatus.o: C:\Keil\ARM\ARMCC\Bin\..\include\stddef.h
 .\objects\uistatus.o: ..\STemWin\inc\SCROLLBAR.h
 .\objects\uistatus.o: ..\STemWin\inc\WIDGET.h
 .\objects\uistatus.o: ..\STemWin\inc\CALENDAR.h
@@ -46,5 +46,5 @@
 .\objects\uistatus.o: ..\STemWin\inc\TEXT.h
 .\objects\uistatus.o: ..\STemWin\inc\TREEVIEW.h
 .\objects\uistatus.o: ..\STemWin\inc\KNOB.h
-.\objects\uistatus.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\uistatus.o: ..\User\GUI/UiPolygon.h
+.\objects\uistatus.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uistatus.o: ..\User\Widget/UiPolygon.h

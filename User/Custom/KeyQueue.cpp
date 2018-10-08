@@ -23,13 +23,22 @@ void KeyQueue::push(uint16_t key)
 {
 	for (uint16_t i = 1; i < 6; i ++) { mKeyArray[i - 1] = mKeyArray[i];}
 	mKeyArray[5] = key;
-	if (isChecked()) 
-	{
-		pListener->onDisplayPasswordWindow();
-	}
-	
 }
 
+bool KeyQueue::pushAndCheck(uint16_t key)
+{
+	for (uint16_t i = 1; i < 6; i ++) { mKeyArray[i - 1] = mKeyArray[i];}
+	mKeyArray[5] = key;
+	
+	for (uint16_t i = 0; i < 6; i ++) 
+	{
+		if (mKeyArray[i] != Password[i]) 
+		{
+			return false;
+		}
+	}
+	return true;
+}
 
 
 
